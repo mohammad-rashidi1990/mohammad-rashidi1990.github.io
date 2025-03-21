@@ -1,38 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mohammad – Tutor in Melbourne</title>
+  <meta charset="UTF-8">
+  <title>Mohammad Rashidi – Tutoring in Melbourne</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 40px;
+      color: #333;
     }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-    .button {
-      background-color: #4CAF50;
+
+    header {
+      background-color: #2c3e50;
       color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .subjects {
+      margin: 20px 0;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .button {
       display: inline-block;
       margin-top: 20px;
+      background-color: #3498db;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Hi, I'm Mohammad 👋</h1>
-  <p>I offer private tutoring in Mathematics, Physics, Python, and MATLAB for undergraduates in Melbourne.</p>
-  <p>📍 In-person or online | 🎓 PhD in Engineering</p>
+  <header>
+    <h1>Hi, I'm Mohammad 👋</h1>
+    <p>Private Tutor in Melbourne – PhD in Engineering</p>
+  </header>
 
-  <a class="button" href="mailto:mohammad.rashidi.sh@gmail.com">Email Me</a>
+  <main>
+    <div class="card">
+      <h2>📚 Subjects I Teach</h2>
+      <div class="subjects">
+        • Mathematics (Calculus, Algebra, Engineering Math)<br>
+        • Physics (Mechanics, Electromagnetism, Optics)<br>
+        • Programming in Python & MATLAB<br>
+        • Help with assignments, exam prep, or coding projects
+      </div>
+
+      <a class="button" href="mailto:mohammad.rashidi.sh@gmail.com">📩 Contact Me</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Mohammad Rashidi | Melbourne, Australia</p>
+  </footer>
 
 </body>
 </html>
