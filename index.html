@@ -2,74 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mohammad Rashidi – Tutoring in Melbourne</title>
+  <title>STEM Tutor Hub | Private Tutoring by Mo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fb;
       color: #333;
     }
 
     header {
       background-color: #2c3e50;
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 42px;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 18px;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #34495e;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
     }
 
     main {
-      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    .card {
-      background: white;
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    .section {
+      margin-bottom: 50px;
     }
 
-    .subjects {
-      margin: 20px 0;
+    .section h2 {
+      color: #2c3e50;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .subjects ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .subjects li {
+      margin-bottom: 10px;
       font-size: 18px;
-      line-height: 1.6;
     }
 
-    .button {
+    .contact-btn {
       display: inline-block;
       margin-top: 20px;
+      padding: 12px 24px;
       background-color: #3498db;
       color: white;
-      padding: 12px 24px;
       text-decoration: none;
       border-radius: 6px;
       font-size: 16px;
     }
 
     footer {
-      margin-top: 40px;
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #ecf0f1;
       font-size: 14px;
-      color: #777;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 28px;
-      }
+      color: #555;
     }
   </style>
 </head>
@@ -80,22 +95,55 @@
     <p>Private Tutor in Melbourne – PhD in Engineering</p>
   </header>
 
-  <main>
-    <div class="card">
-      <h2>📚 Subjects I Teach</h2>
-      <div class="subjects">
-        • Mathematics (Calculus, Algebra, Engineering Math)<br>
-        • Physics (Mechanics, Electromagnetism, Optics)<br>
-        • Programming in Python & MATLAB<br>
-        • Help with assignments, exam prep, or coding projects
-      </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#subjects">Subjects</a>
+    <a href="#approach">My Approach</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-      <a class="button" href="mailto:mohammad.rashidi.sh@gmail.com">📩 Contact Me</a>
-    </div>
+  <main>
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>Hi, I’m Mohammad — but feel free to call me Mo if that’s easier!</p>
+      <p>I’m a Melbourne-based engineer, researcher, and lifelong learner with a soft spot for teaching and helping others grow. I completed my PhD in Physics and Engineering at the Australian National University, where I explored the fascinating world of light, optics, and advanced imaging technologies.</p>
+      <p>By day, I work as an Optical Engineer and Algorithm Developer, building cutting-edge imaging systems that blend physics, software, and AI — tools that help doctors and researchers see the invisible. But teaching has always been more than just a side note for me. Whether I was tutoring university physics courses, mentoring research students, or helping someone finally “get” a tough concept, I’ve always loved those lightbulb moments.</p>
+      <p>What you’ll find with me is a mix of deep technical knowledge and a down-to-earth way of explaining things — shaped by years of real-world experience and a lot of coffee-fueled conversations.</p>
+      <p>Outside of work and tutoring, I’m probably at the gym, overanalyzing sci-fi movies, or working on my next little side project (usually something involving too many Python scripts).</p>
+    </section>
+
+    <section class="section subjects" id="subjects">
+      <h2>📚 Subjects I Tutor</h2>
+      <ul>
+        <li>🧮 <strong>Mathematics:</strong> Calculus, Algebra, Engineering Math</li>
+        <li>⚛️ <strong>Physics:</strong> Mechanics, Electromagnetism, Optics</li>
+        <li>💻 <strong>Programming:</strong> Python, MATLAB (Beginner to Advanced)</li>
+        <li>🛠️ <strong>Engineering:</strong> Problem-solving, assignments, and projects</li>
+      </ul>
+    </section>
+
+    <section class="section" id="approach">
+      <h2>🎯 My Approach</h2>
+      <p>I focus on simplifying complex topics through clear explanations and step-by-step practice. Every session is tailored to the student's needs, whether it's exam prep, understanding key concepts, or building long-term skills. I combine academic depth with patience and encouragement to create a supportive learning environment.</p>
+    </section>
+
+    <section class="section" id="testimonials">
+      <h2>⭐ What Students Say</h2>
+      <p><em>"Mohammad helped me understand calculus in a way no one else could. My grades improved, but more importantly, I actually started enjoying math!" – Uni Student</em></p>
+      <p><em>"Very professional, always prepared, and explains things clearly. Highly recommended!" – Parent of high school student</em></p>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>📩 Contact Me</h2>
+      <p>Have a question or want to book a session? I'd love to hear from you! Feel free to email me with your inquiry, and I’ll get back to you within 24 hours.</p>
+      <p><strong>Email:</strong> <a href="mailto:stemtutorhub@gmail.com">stemtutorhub@gmail.com</a></p>
+      <p><small>Your information is safe — I respect your privacy and never share your details.</small></p>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Mohammad Rashidi | Melbourne, Australia</p>
+    <p>© 2025 Mo | STEM Tutor Hub | Melbourne</p>
   </footer>
 
 </body>
