@@ -4,70 +4,118 @@
   <meta charset="UTF-8">
   <title>STEM Tutor Hub | Private Tutoring by Mo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f7f9fb;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f8fa;
       color: #333;
+      line-height: 1.6;
     }
-
+  
     header {
-      background-color: #2c3e50;
+      background: linear-gradient(to right, #2c3e50, #34495e);
       color: white;
-      padding: 60px 20px;
+      padding: 70px 20px 50px;
       text-align: center;
     }
-
+  
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 25px;
+    }
+  
     header h1 {
       margin: 0;
       font-size: 42px;
+      font-weight: 700;
     }
-
+  
     header p {
-      margin-top: 15px;
+      margin-top: 10px;
       font-size: 20px;
+      font-weight: 400;
     }
-
+  
+    header p.subheading {
+      font-size: 16px;
+      color: #d6dfe8;
+      margin-top: 8px;
+    }
+  
     nav {
       text-align: center;
-      background-color: #34495e;
-      padding: 10px 0;
+      background-color: #1a252f;
+      padding: 12px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-
+  
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
+      margin: 0 18px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s;
     }
-
+  
+    nav a:hover {
+      color: #3498db;
+    }
+  
     main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 25px;
     }
-
+  
     .section {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
+      padding: 20px 25px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
-
+  
     .section h2 {
       color: #2c3e50;
-      font-size: 28px;
-      margin-bottom: 15px;
+      font-size: 30px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
     }
-
+  
+    .section h3 {
+      color: #34495e;
+      font-size: 22px;
+      margin-top: 25px;
+    }
+  
     .subjects ul {
       list-style: none;
       padding-left: 0;
     }
-
+  
     .subjects li {
       margin-bottom: 10px;
       font-size: 18px;
+      padding-left: 15px;
+      position: relative;
     }
-
+  
+    .subjects li::before {
+      content: "\2022";
+      color: #3498db;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+  
     .contact-btn {
       display: inline-block;
       margin-top: 20px;
@@ -77,74 +125,123 @@
       text-decoration: none;
       border-radius: 6px;
       font-size: 16px;
+      transition: background-color 0.3s ease;
     }
-
+  
+    .contact-btn:hover {
+      background-color: #2980b9;
+    }
+  
     footer {
       text-align: center;
       padding: 30px 20px;
-      background-color: #ecf0f1;
-      font-size: 14px;
-      color: #555;
+      background-color: #1a252f;
+      color: white;
+      font-size: 15px;
+      border-top: 1px solid #ccc;
     }
-  </style>
+  
+    footer a {
+      color: #4aa3df;
+      text-decoration: none;
+    }
+  
+    footer a:hover {
+      text-decoration: underline;
+    }
+  
+    ul {
+      margin-top: 10px;
+    }
+  
+    p {
+      font-size: 17px;
+      text-indent: 20px;
+    }
+  </style>  
 </head>
 <body>
 
-  <header>
-    <h1>Hi, I'm Mohammad 👋</h1>
-    <p>Private Tutor in Melbourne – PhD in Engineering</p>
+  <header style="background: linear-gradient(to right, #2c3e50, #34495e); color: white; padding: 60px 20px 40px; text-align: center;">
+    <!-- Optional Profile Photo -->
+    <img src="My_face.jfif" alt="Mohammad Rashidi" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.2); margin-bottom: 25px;">
+  
+    <h1 style="margin: 0; font-size: 42px; font-weight: 700;">Mohammad Rashidi</h1>
+    <p style="margin-top: 10px; font-size: 20px; font-weight: 400;">
+      Engineering PhD · STEM Educator · Consultant · Problem Solver
+    </p>
+    <p style="margin-top: 8px; font-size: 16px; color: #d6dfe8;">
+      Helping students turn confusion into confidence in math, physics, and coding
+    </p>
   </header>
+  
 
   <nav>
     <a href="#about">About</a>
-    <a href="#subjects">Subjects</a>
-    <a href="#approach">My Approach</a>
-    <a href="#testimonials">Testimonials</a>
+    <a href="#subjects">Expertise</a>
+    <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
+    <!-- <a href="#testimonials">Testimonials</a> -->
     <a href="#contact">Contact</a>
   </nav>
 
   <main>
     <section class="section" id="about">
       <h2>About Me</h2>
-      <p>Hi, I’m Mohammad — but feel free to call me Mo if that’s easier!</p>
+      <p style="text-indent: 0;">Hi, I’m Mohammad — but feel free to call me Mo if that’s easier!</p>
       <p>I’m a Melbourne-based engineer, researcher, and lifelong learner with a soft spot for teaching and helping others grow. I completed my PhD in Physics and Engineering at the Australian National University, where I explored the fascinating world of light, optics, and advanced imaging technologies.</p>
       <p>By day, I work as an Optical Engineer and Algorithm Developer, building cutting-edge imaging systems that blend physics, software, and AI — tools that help doctors and researchers see the invisible. But teaching has always been more than just a side note for me. Whether I was tutoring university physics courses, mentoring research students, or helping someone finally “get” a tough concept, I’ve always loved those lightbulb moments.</p>
       <p>What you’ll find with me is a mix of deep technical knowledge and a down-to-earth way of explaining things — shaped by years of real-world experience and a lot of coffee-fueled conversations.</p>
-      <p>Outside of work and tutoring, I’m probably at the gym, overanalyzing sci-fi movies, or working on my next little side project (usually something involving too many Python scripts).</p>
+      <p style="text-indent: 0;">Outside of work and tutoring, I’m probably at the gym, overanalyzing sci-fi movies, or working on my next little side project (usually something involving too many Python scripts).</p>
     </section>
 
-    <section class="section subjects" id="subjects">
-      <h2>📚 Subjects I Tutor</h2>
+    <section class="section" id="services">
+      <h2>🔧 Services</h2>
       <ul>
-        <li>🧮 <strong>Mathematics:</strong> Calculus, Algebra, Engineering Math</li>
-        <li>⚛️ <strong>Physics:</strong> Mechanics, Electromagnetism, Optics</li>
-        <li>💻 <strong>Programming:</strong> Python, MATLAB (Beginner to Advanced)</li>
-        <li>🛠️ <strong>Engineering:</strong> Problem-solving, assignments, and projects</li>
+        <li><strong>University-Level Tutoring:</strong> One-on-one or online tutoring in mathematics, physics, engineering, and programming (Python & MATLAB).</li>
+        <li><strong>Assignment Help:</strong> Code reviews, solution guidance, and conceptual clarification.</li>
+        <li><strong>Project Mentoring:</strong> Support with research, simulations, and development workflows.</li>
+        <li><strong>Technical Consulting:</strong> Python/MATLAB code help, simulation models, and problem-solving advice.</li>
       </ul>
     </section>
 
+    <section class="section subjects" id="subjects">
+      <h2>📚 Areas of Expertise</h2>
+      <p style="text-indent: 0;"></p>Here’s where my academic background and engineering experience intersect with the tutoring I offer:</p>
+    
+      <h3>🧠 General Academic Support</h3>
+      <ul>
+        <li><strong>Mathematics:</strong> Core concepts across high school and university levels, including calculus, algebra, and applied math for engineering</li>
+        <li><strong>Physics:</strong> Foundational and advanced topics such as mechanics, electromagnetism, and wave behavior</li>
+        <li><strong>STEM Skills:</strong> Exam preparation, problem-solving strategies, and confidence building for university students</li>
+      </ul>
+    
+      <h3>🛠️ Technical & Research Skills</h3>
+      <ul>
+        <li><strong>Programming:</strong> Hands-on coding experience in Python and MATLAB for analysis, simulation, and automation</li>
+        <li><strong>Scientific Computing:</strong> Using software tools and coding to support technical projects and research tasks</li>
+        <li><strong>Engineering Tools:</strong> Guidance with practical workflows in design, modeling, and prototyping relevant to optical and biomedical applications</li>
+        <li><strong>AI & Data:</strong> Introduction to machine learning concepts and their applications in real-world problem solving</li>
+      </ul>
+    </section>
+  
+
     <section class="section" id="approach">
       <h2>🎯 My Approach</h2>
-      <p>I focus on simplifying complex topics through clear explanations and step-by-step practice. Every session is tailored to the student's needs, whether it's exam prep, understanding key concepts, or building long-term skills. I combine academic depth with patience and encouragement to create a supportive learning environment.</p>
-    </section>
-
-    <section class="section" id="testimonials">
-      <h2>⭐ What Students Say</h2>
-      <p><em>"Mohammad helped me understand calculus in a way no one else could. My grades improved, but more importantly, I actually started enjoying math!" – Uni Student</em></p>
-      <p><em>"Very professional, always prepared, and explains things clearly. Highly recommended!" – Parent of high school student</em></p>
+      <p style="text-indent: 0;"></p>I aim to simplify the complex — turning advanced topics into something practical, logical, and even enjoyable. Every session is adapted to your pace and goals, with clear explanations, interactive discussions, and structured guidance. I believe confidence grows through understanding, not memorization.</p>
     </section>
 
     <section class="section" id="contact">
       <h2>📩 Contact Me</h2>
-      <p>Have a question or want to book a session? I'd love to hear from you! Feel free to email me with your inquiry, and I’ll get back to you within 24 hours.</p>
-      <p><strong>Email:</strong> <a href="mailto:stemtutorhub@gmail.com">stemtutorhub@gmail.com</a></p>
-      <p><small>Your information is safe — I respect your privacy and never share your details.</small></p>
+      <p style="text-indent: 0;">Have a question or want to book a session? I’d love to hear from you. Just send an email and I’ll get back to you within 24 hours.</p>
+      <p style="margin-top: 10px; font-size: 18px; font-weight: 500; background-color: #eef6fb; padding: 12px 16px; border-left: 4px solid #3498db; display: inline-block;">
+        📧 <a href="mailto:stemtutorhub@gmail.com" style="color: #2c3e50; text-decoration: none;">stemtutorhub@gmail.com</a>
+      </p>
     </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Mo | STEM Tutor Hub | Melbourne</p>
-  </footer>
-
-</body>
-</html>
+    </main>
+    
+    <footer style="background-color: #1a252f; color: white; padding: 30px 20px; text-align: center; font-size: 15px;">
+      <p style="margin: 0 0 10px;">© 2025 Mo | STEM Tutor Hub | Melbourne</p>
+      <p style="margin: 5px 0;">📧 <a href="mailto:stemtutorhub@gmail.com" style="color: #4aa3df; text-decoration: none;">stemtutorhub@gmail.com</a></p>
+      <p style="margin: 5px 0;">🔗 <a href="https://www.linkedin.com/in/mohammad-r-850a10149/" target="_blank" style="color: #4aa3df; text-decoration: none;">Connect on LinkedIn</a></p>
+    </footer>
