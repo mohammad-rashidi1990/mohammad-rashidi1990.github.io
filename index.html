@@ -1,1 +1,200 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Private STEM tutoring in math, physics, and coding by PhD-qualified tutor Mo. Personalized support for uni students and professionals." />
+  <title>STEM Tutor Hub | Private Tutoring by Mo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="author" content="Mohammad Rashidi">
+  <meta name="robots" content="index, follow">
+  <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    #contact fieldset {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #f9f9f9;
+    }
+    #contact fieldset legend {
+      font-weight: 600;
+      padding: 0 0.5rem;
+      color: var(--primary-color);
+    }
+    #contact fieldset label {
+      display: block;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    #preferred-time-container textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      resize: vertical;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    #preferred-time-container textarea:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+    #preferred-time-container .session-info {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0.4rem 0 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <img src="My_face.jpg" alt="Photo of Mohammad Rashidi" width="140" height="140" />
+    <h1>Mohammad Rashidi</h1>
+    <p>Engineering PhD · STEM Educator · Consultant · Problem Solver</p>
+    <p class="subheading">Helping students turn confusion into confidence in math, physics, and coding</p>
+  </header>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#subjects">Expertise</a>
+    <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main id="main-content">
+    <section class="section" id="about" aria-labelledby="about">
+      <h2>About Me</h2>
+      <p>Hi, I’m Mohammad — but feel free to call me Mo!</p>
+      <p>I’m a Melbourne-based engineer, researcher, and lifelong learner with a soft spot for teaching. I completed my PhD in Physics and Engineering at the Australian National University, diving deep into the world of light, optics, and biomedical imaging technology.</p>
+      <p>By day, I work as an Optical Engineer and Algorithm Developer, building advanced imaging systems that blend physics, software, and AI. But teaching has always been a passion. Whether tutoring university courses, mentoring researchers, or helping someone finally "get" a tough concept — I love those lightbulb moments.</p>
+      <p>Expect a mix of deep technical knowledge and approachable explanations, shaped by real-world experience and a strong educational foundation.</p>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services">
+      <h2>🔧 Services</h2>
+      <ul>
+        <li><strong>University-Level Tutoring:</strong> Math, physics, engineering, and programming (Python & MATLAB).</li>
+        <li><strong>Assignment Help:</strong> Code reviews, guidance, and conceptual clarity.</li>
+        <li><strong>Project Mentoring:</strong> Research, simulation, and workflow advice.</li>
+        <li><strong>Technical Consulting:</strong> Python/MATLAB support, modeling, and problem-solving.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="subjects" aria-labelledby="subjects">
+      <h2>📚 Areas of Expertise</h2>
+      <h3>🧠 Core Academic Subjects</h3>
+      <ul>
+        <li><strong>Mathematics:</strong> Calculus, Linear Algebra, Differential Equations, Engineering Math</li>
+        <li><strong>Physics:</strong> Mechanics, Electromagnetism, Optics, Quantum Physics, Thermodynamics</li>
+        <li><strong>Electrical & Electronics:</strong> Circuits, Signal Processing, Control Systems</li>
+      </ul>
+      <h3>🛠️ Technical & Computational Skills</h3>
+      <ul>
+        <li><strong>Programming:</strong> Python, MATLAB (data analysis, automation, visualization)</li>
+        <li><strong>Simulation Tools:</strong> COMSOL, ZEMAX, LTspice</li>
+        <li><strong>AI & Data Science:</strong> ML basics, algorithm design, image processing</li>
+      </ul>
+    </section>
+
+    <section class="section" id="approach">
+      <h2>🎯 My Approach</h2>
+      <p>I simplify the complex. Every session is tailored to your pace and learning style, blending clear explanations, interactive learning, and practical examples. Understanding comes first — memorization follows naturally.</p>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact">
+      <h2>📩 Contact Me</h2>
+      <p style="text-align:center; font-size:1rem; color:#444;">Have a question or want to book a session? Fill out the form and I’ll get back to you within 24 hours.</p>
+
+      <div style="background:#eef6ff; border-left:4px solid #3498db; padding:12px 16px; margin:1rem 0; border-radius:6px; font-size:16px;">
+        📧 Prefer email? Reach me at <a href="mailto:stemtutorhub@gmail.com" style="color:#2563EB; font-weight:600; text-decoration:none;">stemtutorhub@gmail.com</a>
+      </div>
+
+      <form action="https://formspree.io/f/meoaklaz" method="POST" onsubmit="handleSubmit(event)" aria-label="Contact form">
+        <div class="two-col">
+          <div>
+            <label for="name">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="e.g. Sarah Johnson" required />
+          </div>
+          <div>
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="email" placeholder="e.g. sarah@email.com" required />
+          </div>
+        </div>
+
+        <label for="inquiry_type">What’s this about?</label>
+        <select name="inquiry_type" id="inquiry_type" required>
+          <option value="">Select an option</option>
+          <option value="ask_question">I want to ask a question</option>
+          <option value="book_session">I’d like to book a session</option>
+        </select>
+
+        <div id="booking-options" style="display:none;">
+          <fieldset>
+            <legend>Preferred Session Type</legend>
+            <label><input type="checkbox" name="session_type[]" value="online" /> Online</label>
+            <label><input type="checkbox" name="session_type[]" value="in_person" /> In Person</label>
+          </fieldset>
+
+          <div id="preferred-time-container">
+            <label for="preferred_time">Preferred day/time for session (optional)</label>
+            <p class="session-info">Available times: <strong>Weekdays 6–9 PM</strong> & <strong>Weekends 9 AM–9 PM</strong></p>
+            <textarea name="preferred_time" id="preferred_time" rows="3" placeholder="e.g. Monday 6–7pm, Saturday 10am–12pm"></textarea>
+          </div>
+        </div>
+
+        <label for="message">What do you need help with?</label>
+        <textarea name="message" id="message" rows="5" required placeholder="Briefly describe your needs or questions..."></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="confirmation" style="display:none; color:green; font-weight:500; margin-top:10px;">Thanks! Your message has been sent.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Mo | STEM Tutor Hub | Melbourne</p>
+    <p>📧 <a href="mailto:stemtutorhub@gmail.com">stemtutorhub@gmail.com</a></p>
+    <p style="margin-top:20px; font-size:14px; color:#ccc;">Explore more about our work and community presence:</p>
+    <p>
+      <a href="https://www.linkedin.com/company/106422657/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin" style="margin-right:6px; color:#4aa3df;"></i>
+        STEM Tutor Hub on LinkedIn
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const confirmation = document.getElementById("confirmation");
+
+      fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      })
+        .then((response) => {
+          if (response.ok) {
+            form.reset();
+            confirmation.style.display = "block";
+          } else {
+            alert("There was a problem sending your message. Please try again later.");
+          }
+        })
+        .catch(() => alert("Something went wrong. Please try again."));
+    }
+
+    document.getElementById("inquiry_type").addEventListener("change", function () {
+      const bookingOptions = document.getElementById("booking-options");
+      bookingOptions.style.display = this.value === "book_session" ? "block" : "none";
+    });
+  </script>
+</body>
+</html>
